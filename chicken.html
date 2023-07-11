@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chicken</title>
+  <link rel="stylesheet" href="Simba.css">
+  <link rel="stylesheet" href="header.css">
+</head>
+<body>
+  <header>
+		<div><img class="top-icon" src="Media/2.svg" ></div>
+
+		<div class="header-button-box">
+			<a href="index.html"> <div> <span>Home</span> </div> </a>
+			<a href="gallery.html" > <div> <span>Gallery</span> </div> </a>
+			<a href="chicken.html"> <div> <span>Chicken</span> </div> </a>
+			<a href="Contact.html"> <div> <span>Contact</span> </div> </a>
+		</div>
+	</header>
+	<!--SIDEBAR-->
+	<sidebar class="socials-sidebar">
+		<a class="social-icon"><img class="social-img" src="Media/socials/iconmonstr-facebook-6.svg"></a>
+		<a class="social-icon"><img class="social-img" src="Media/socials/iconmonstr-instagram-11.svg"></a>
+		<a class="social-icon"><img class="social-img" src="Media/socials/iconmonstr-twitter-1.svg"></a>
+		<a class="social-icon"><img	class="social-img" src="Media/socials/logo-tiktok-svgrepo-com.svg"></a>
+	</sidebar>
+  <div class="feed-button-icon-outer">
+    <div class="feed-button-icon">
+			<span>Feed Simba Some chicken</span>
+    </div>
+  </div>
+    <div class="feed-function">
+      <div class="feed-button" id="feedButton" onclick="
+         counter++;
+         document.getElementById('counterSpan').textContent = counter;
+         if (counter===10){
+        alert('STOP 10 CHICKEN IS TOO MUCH')
+        }
+        ">
+        <img class = "chicken-pic" src="Media/1292927.svg">
+      </div>
+
+      <div class="feed-span-container">
+        <span class="chicken-text">You have feed Simba</span> <span class="counter-text" id="counterSpan">0</span> <span>Chickens but he is still not full sadly</span>
+      </div>
+    </div>
+
+    <div class="simba-chicken-container">
+			<img class="Simba-chicken-pic" src="Media/siiimba.jpg">
+		</div>
+
+    <div class="gallery-outer-containar">
+      <div class="gallery-inner-containar">
+        <span>Thanks for feeding the doggo! but it is never enough</span>
+      </div>
+    </div>
+
+    <script>
+      let counter = 0;
+    </script>
+</body>
+</html>
